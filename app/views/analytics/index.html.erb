@@ -1,0 +1,31 @@
+<h1 class="text-decoration-underline" style="text-underline-offset: 0.3em; margin: 50px auto">Ordering Searches Based on Keywords</h1>
+
+<div class="row mb-4">
+  <div class="col-md-9 col-12">
+    <table class="table table-bordered">
+      <tr>
+        <th>Word</th>
+        <th>Typed number</th>
+      </tr>
+        <% @analytics.each do |a| %>
+        <tr>
+          <td><%= a.word %></td>
+          <td><%= a.count %></td>
+        </tr>
+      <% end %>
+    </table>
+  </div>
+
+  <div class="col-md-3 col-12">
+    <table class="table table-bordered">
+      <tr>
+        <th>Trending</th>
+      </tr>
+      <% @analytics.first(5).each do |search| %>
+        <tr>
+          <td><strong><%= search.word %></strong></td>
+        </tr>
+      <% end %>
+    </table>
+  </div>
+</div>
