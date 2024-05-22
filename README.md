@@ -73,9 +73,9 @@ Open [http://localhost:3000/](http://localhost:3000/]) in your browser.
 bundle exec rspec
 ```
 
-## Authors
+## Author
 
-👤 **Joseph Ogbole**
+👤 **Ghislain Mitahi**
 
 - GitHub: [@GislainMitahi](https://github.com/GhislainMitahi)
 - Twitter: [@MitahiGhis](https://twitter.com/MitahiGhis)
