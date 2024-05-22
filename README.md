@@ -1,24 +1,95 @@
-# README
+# Real-time Search box
+> This project features a real-time search box that provides analytics on the most frequently searched terms.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Built With
 
-Things you may want to cover:
+- Ruby on Rails
+- Vanilla JS
+- Turbo_frames
+- Postgresql
+- stimulus
 
-* Ruby version
 
-* System dependencies
+## Live Link
+[Live](http://realtimesearch-ocbj.onrender.com)
 
-* Configuration
 
-* Database creation
+## Getting Started
 
-* Database initialization
+To get a local copy up and running follow these simple steps:
 
-* How to run the test suite
+```sh
+git clone git@github.com:GhislainMitahi/realtimesearch.git
+cd realtimesearch
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+### Prerequisites
+Before starting make sure that you have the following runing on your computer
 
-* Deployment instructions
+- `Ruby 3.2.4`
+- `Rails 7.1.3.3`
+- `PostgresSQL`
 
-* ...
+### Setup
+
+Install gems with:
+
+```sh
+bundle install
+```
+
+Create a file `.env` in the root of your project directory to store your database name and the password.
+
+```sh
+touch .env
+```
+
+`.env` file content
+
+```ruby
+DB_USERNAME=your_database_name
+DB_PASSWORD=your_database_password
+```
+
+Setup database
+
+```sh
+rails db:setup
+rails db:migrate
+rails db:seed
+```
+
+Start server 
+
+```sh
+rails s
+```
+
+Open [http://localhost:3000/](http://localhost:3000/]) in your browser.
+ 
+### Run tests
+
+```
+bundle exec rspec
+```
+
+## Author
+
+👤 **Ghislain Mitahi**
+
+- GitHub: [@GislainMitahi](https://github.com/GhislainMitahi)
+- Twitter: [@MitahiGhis](https://twitter.com/MitahiGhis)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/ghislain-mitahi/)
+
+## Contributing
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/GhislainMitahi/realtimesearch/issues).
+
+## Acknowledgments
+
+- Big thanks to Google and ChatGPT for their invaluable research and solutions provided for this task.
+
+## 📝 License
+
+This project is [MIT](./LICENSE) licensed.
